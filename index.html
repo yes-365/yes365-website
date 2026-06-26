@@ -81,7 +81,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     --green:       #1fa874;
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
+  html, body { margin: 0; padding: 0; overflow-x: hidden; }
   body {
     font-family: "Archivo", "Helvetica Neue", sans-serif;
     color: var(--black);
@@ -1404,6 +1404,25 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   @media (max-width: 540px) {
     .float-chat .label { display: none; }
     .float-chat { padding: 14px; }
+  }
+
+  /* ================= MOBILE OVERFLOW FIXES ================= */
+  @media (max-width: 720px) {
+    .hero-title .y {
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      font-size: 40px !important;
+      padding: 8px 0 !important;
+      margin: 0 0 16px 0 !important;
+    }
+    .hero-title .line span {
+      font-size: 40px !important;
+    }
+    .section-title {
+      width: auto !important;
+      max-width: 100% !important;
+    }
   }
 </style>
 </head>
