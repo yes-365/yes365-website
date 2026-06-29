@@ -1,46 +1,30 @@
 # Yes365 Car Rentals
 
-> Toyota hybrid car rentals for Uber and DiDi drivers in Sydney, Australia.
+> Toyota hybrid car rentals for Uber and DiDi drivers in Sydney, Australia. Unlimited kilometres, rideshare insurance included, full maintenance covered. Pick up in Tempe — on the road within 24 hours.
 
-## About
-
-Yes365 rents Toyota hybrid vehicles exclusively to rideshare drivers operating on Uber and DiDi in Sydney. All cars include unlimited kilometres, rideshare-specific insurance, full maintenance, and 24/7 roadside assistance. Drivers can be on the road within 24 hours.
+Yes365 rents Toyota hybrid vehicles exclusively to Uber and DiDi drivers in Sydney. Every rental includes unlimited KMs, rideshare-specific comprehensive insurance, full service and maintenance, and 24/7 roadside assistance. Foreign licences accepted.
 
 ## Fleet
 
-- Toyota Camry 50 Hybrid — from $200/week — Uber X eligible
-- Toyota Corolla Hatchback Hybrid — from $250/week — Uber X eligible
-- Toyota Camry 70 Hybrid — from $300/week — Uber X and Uber Comfort eligible
-- Toyota RAV4 Hybrid SUV — from $350/week — Uber X and Uber Comfort eligible
-
-## Included in every rental
-
-- Unlimited kilometres
-- Rideshare-specific comprehensive insurance
-- Full service and maintenance
-- Compulsory third-party cover
-- 24/7 roadside assistance
+- Toyota Camry 50 Hybrid: from $200/week — Uber X eligible
+- Toyota Corolla Hatchback Hybrid: from $250/week — Uber X eligible
+- Toyota Camry 70 Hybrid: from $300/week — Uber X and Uber Comfort eligible
+- Toyota RAV4 Hybrid SUV: from $350/week — Uber X and Uber Comfort eligible
 
 ## Location
 
-2 Holbeach Ave, Tempe NSW 2044, Australia
-10 minutes from Sydney Airport.
+2 Holbeach Ave, Tempe NSW 2044, Australia. 10 minutes from Sydney Airport.
 
-## Hours
-
-Monday–Friday: 8:00 AM – 5:00 PM
-Saturday: 9:00 AM – 4:00 PM
-Sunday: Closed (24/7 emergency line available)
+Mon–Fri 8:00 AM – 5:00 PM · Sat 9:00 AM – 4:00 PM · Sun closed (24/7 emergency line).
 
 ## Contact
 
-- Phone / WhatsApp: +61 456 555 415
-- Email: info@yes365.au
-- Website: https://yes365.au
+Phone / WhatsApp: +61 456 555 415
+Email: info@yes365.au
 
-## Eligibility
+## Optional
 
-- Valid driver's licence held for at least 1 year
-- Foreign licences accepted (passport required)
-- Proof of address required
-- No credit history required
+- [Fleet](https://yes365.au/#fleet): All available Toyota hybrid vehicles with pricing
+- [How it works](https://yes365.au/#how): 3-step process from enquiry to driving
+- [FAQ](https://yes365.au/#faq): Common questions about licences, insurance, documents and contracts
+- [Find us](https://yes365.au/#find): Location map and contact details
