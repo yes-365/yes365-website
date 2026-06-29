@@ -2023,31 +2023,6 @@ Uber/DiDi drivers from day one.
   </a>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  /* ---------- COUNTDOWN ---------- */
-  (function () {
-    const end = new Date('2026-06-15T23:59:00+10:00').getTime();
-    const elD = document.getElementById('t-d');
-    const elH = document.getElementById('t-h');
-    const elM = document.getElementById('t-m');
-    const elS = document.getElementById('t-s');
-    if (!elD) return;
-    function pad(n) { return String(n).padStart(2, '0'); }
-    function tick() {
-      const now = Date.now();
-      let diff = Math.max(0, end - now);
-      const d = Math.floor(diff / (1000 * 60 * 60 * 24)); diff -= d * 86400000;
-      const h = Math.floor(diff / (1000 * 60 * 60));     diff -= h * 3600000;
-      const m = Math.floor(diff / (1000 * 60));          diff -= m * 60000;
-      const s = Math.floor(diff / 1000);
-      elD.textContent = pad(d);
-      elH.textContent = pad(h);
-      elM.textContent = pad(m);
-      elS.textContent = pad(s);
-    }
-    tick();
-    setInterval(tick, 1000);
-  })();
-
   /* ---------- HIDE FLOATING CHAT WHEN FOOTER IS VISIBLE ---------- */
   (function () {
     const chat = document.querySelector('.float-chat');
