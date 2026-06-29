@@ -11,12 +11,12 @@
 <meta name="theme-color" content="#1632b8" />
 <link rel="preload" as="image" type="image/webp" href="/assets/camry-hero-clean.webp" fetchpriority="high" />
 <link rel="canonical" href="https://yes365.au/" />
-<!-- Preconnect critical third-party origins -->
+<!-- Preconnect critical third-party origins (max 4) -->
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<link rel="preconnect" href="https://connect.facebook.net">
-<!-- DNS prefetch for analytics/maps -->
+<!-- DNS prefetch for analytics, ads and maps -->
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
 <link rel="dns-prefetch" href="https://www.google-analytics.com">
 <link rel="dns-prefetch" href="https://stats.g.doubleclick.net">
 <link rel="dns-prefetch" href="https://www.facebook.com">
@@ -312,11 +312,14 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   }
   .nav-links a { opacity: 0.92; position: relative; }
   .nav-links a:not(:first-child)::before {
-    content: "|";
+    content: "";
     position: absolute;
     left: -16px;
-    color: rgba(255,255,255,0.28);
-    font-weight: 400;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: rgba(255,255,255,0.3);
   }
   .nav-links a:hover { color: var(--yellow); opacity: 1; }
   .nav-right {
@@ -1507,7 +1510,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     font-size: 10px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.55);
   }
   .foot-bottom .social { display: flex; gap: 10px; }
   .foot-bottom .social a {
@@ -1606,7 +1609,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   <nav class="nav">
     <div class="nav-inner" style="color: #ffffff">
       <a href="#" class="logo" aria-label="Yes365 Car Rentals">
-        <picture><source srcset="assets/logo-yes365-transparent.webp" type="image/webp" /><img src="assets/logo-yes365-transparent.png" alt="Yes365 Car Rentals" width="201" height="70" style="width: 201px; height: 70px" /></picture>
+        <picture><source srcset="assets/logo-yes365-transparent.webp" type="image/webp" /><img src="assets/logo-yes365-transparent.png" alt="Yes365 Car Rentals" width="201" height="67" style="width: 201px; height: auto" /></picture>
       </a>
       <div class="nav-links" style="font-weight: 100; font-family: &quot;Sharp Grotesk SemiBold 25&quot;">
         <a href="#fleet">Fleet</a>
