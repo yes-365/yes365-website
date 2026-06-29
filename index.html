@@ -11,9 +11,6 @@
 <meta name="theme-color" content="#1632b8" />
 <link rel="preload" as="image" type="image/webp" href="/assets/camry-hero-clean.webp" fetchpriority="high" />
 <link rel="canonical" href="https://yes365.au/" />
-<!-- Preconnect critical third-party origins (max 4) -->
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-<link rel="preconnect" href="https://unpkg.com" crossorigin>
 <!-- DNS prefetch for analytics, ads and maps -->
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://connect.facebook.net">
@@ -192,10 +189,6 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=JetBrains+Mono:wght@500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"></noscript>
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
-<link rel="preload" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"></noscript>
 <style>
   /* ================= SHARP GROTESK (uploaded) ================= */
   @font-face {
@@ -1420,11 +1413,17 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   .find-row .ico svg {
     width: 22px;
     height: 22px;
-    stroke: var(--blue);
-    stroke-width: 1.8;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    fill: currentColor;
+  }
+  .float-chat .icon svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+  .foot-bottom .social a svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
   }
   .find-row .label {
     font-family: "JetBrains Mono", monospace;
@@ -1962,7 +1961,7 @@ Uber/DiDi drivers from day one.
 
           <div class="find-info">
             <div class="find-row">
-              <div class="ico" style="border-radius: 10px"><i class="ph-fill ph-phone"></i></div>
+              <div class="ico" style="border-radius: 10px"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"/></svg></div>
               <div>
                 <div class="label" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 16px; letter-spacing: 0px">Phone</div>
                 <div class="val"><a href="tel:+61456555415" style="color: #fff; font-size: 21px; font-family: &quot;Sharp Grotesk SemiBold 25&quot;">0456 555 415</a></div>
@@ -1970,7 +1969,7 @@ Uber/DiDi drivers from day one.
               </div>
             </div>
             <div class="find-row">
-              <div class="ico" style="border-radius: 10px"><i class="ph-fill ph-clock"></i></div>
+              <div class="ico" style="border-radius: 10px"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm56,112H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48a8,8,0,0,1,0,16Z"/></svg></div>
               <div>
                 <div class="label" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 16px; letter-spacing: 0px">Hours</div>
                 <div class="val" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 21px">Mon–Fri · 8:00 AM – 5:00 PM</div>
@@ -1978,7 +1977,7 @@ Uber/DiDi drivers from day one.
               </div>
             </div>
             <div class="find-row">
-              <div class="ico" style="border-radius: 10px"><i class="ph-fill ph-envelope"></i></div>
+              <div class="ico" style="border-radius: 10px"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"/></svg></div>
               <div>
                 <div class="label" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 14px; letter-spacing: 0px">Email</div>
                 <div class="val" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 21px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91f9f4fdfdfed1e8f4e2a2a7a4bff0e4">[email&#160;protected]</a></div>
@@ -2039,15 +2038,15 @@ Uber/DiDi drivers from day one.
     <div class="foot-bottom">
       <div style="font-family: &quot;Sharp Grotesk Medium 20&quot;">© 2026 Yes365 Car Rentals · ABN 52 554 375 474</div>
       <div class="social">
-        <a href="https://www.facebook.com/profile.php?id=61589738999701" target="_blank" rel="noopener" aria-label="Facebook" style="border-radius: 10px"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/yes365.au/" target="_blank" rel="noopener" aria-label="Instagram" style="border-radius: 10px"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61589738999701" target="_blank" rel="noopener" aria-label="Facebook" style="border-radius: 10px"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
+        <a href="https://www.instagram.com/yes365.au/" target="_blank" rel="noopener" aria-label="Instagram" style="border-radius: 10px"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
       </div>
     </div>
   </footer>
 
   <!-- =============== FLOATING CHAT =============== -->
   <a href="https://wa.me/61456555415?text=Hi%20Yes365!%20I%20came%20from%20the%20website%2C%20I%20have%20a%20quick%20question." target="_blank" rel="noopener" class="float-chat" aria-label="Open WhatsApp chat">
-    <span class="icon"><i class="ph-fill ph-chat-circle-dots"></i></span>
+    <span class="icon"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24ZM84,140a12,12,0,1,1,12-12A12,12,0,0,1,84,140Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,128,140Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,172,140Z"/></svg></span>
     <span class="label" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;">Chat with us</span>
     <span class="badge" style="font-family: &quot;Sharp Grotesk Medium 20&quot;; font-size: 10px; border-radius: 5px">LIVE</span>
   </a>
