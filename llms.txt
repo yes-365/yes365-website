@@ -1,30 +1,14 @@
 # Yes365 Car Rentals
 
-> Toyota hybrid car rentals for Uber and DiDi drivers in Sydney, Australia. Unlimited kilometres, rideshare insurance included, full maintenance covered. Pick up in Tempe — on the road within 24 hours.
+> Toyota hybrid car rentals for Uber and DiDi drivers in Sydney, Australia. Unlimited kilometres, rideshare insurance and full maintenance included. Pick up in Tempe NSW — on the road within 24 hours. Foreign licences accepted.
 
-Yes365 rents Toyota hybrid vehicles exclusively to Uber and DiDi drivers in Sydney. Every rental includes unlimited KMs, rideshare-specific comprehensive insurance, full service and maintenance, and 24/7 roadside assistance. Foreign licences accepted.
+## Pages
 
-## Fleet
-
-- Toyota Camry 50 Hybrid: from $200/week — Uber X eligible
-- Toyota Corolla Hatchback Hybrid: from $250/week — Uber X eligible
-- Toyota Camry 70 Hybrid: from $300/week — Uber X and Uber Comfort eligible
-- Toyota RAV4 Hybrid SUV: from $350/week — Uber X and Uber Comfort eligible
-
-## Location
-
-2 Holbeach Ave, Tempe NSW 2044, Australia. 10 minutes from Sydney Airport.
-
-Mon–Fri 8:00 AM – 5:00 PM · Sat 9:00 AM – 4:00 PM · Sun closed (24/7 emergency line).
-
-## Contact
-
-Phone / WhatsApp: +61 456 555 415
-Email: info@yes365.au
+- [Fleet & Pricing](https://yes365.au): Toyota Camry 50 from $200/week, Corolla from $250/week, Camry 70 from $300/week, RAV4 from $350/week — all Uber-approved hybrids
+- [How It Works](https://yes365.au): Book online or WhatsApp, bring your licence and proof of address, sign and drive the same day
+- [FAQ](https://yes365.au): Licences, insurance, documents, swaps and the free-week promotion
+- [Contact](https://yes365.au): 2 Holbeach Ave Tempe NSW 2044 · +61 456 555 415 · info@yes365.au
 
 ## Optional
 
-- [Fleet](https://yes365.au/#fleet): All available Toyota hybrid vehicles with pricing
-- [How it works](https://yes365.au/#how): 3-step process from enquiry to driving
-- [FAQ](https://yes365.au/#faq): Common questions about licences, insurance, documents and contracts
-- [Find us](https://yes365.au/#find): Location map and contact details
+- [WhatsApp](https://wa.me/61456555415): Chat directly with the Yes365 team to book or ask questions
