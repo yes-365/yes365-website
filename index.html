@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" href="/assets/favicon.png" />
 <meta name="theme-color" content="#1632b8" />
 <link rel="preload" as="image" type="image/webp" href="/assets/camry-hero-clean.webp" fetchpriority="high" />
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/SharpGrotesk-SemiBold25.woff2" crossorigin>
 <link rel="canonical" href="https://yes365.au/" />
 <!-- DNS prefetch for analytics, ads and maps -->
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -190,7 +191,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=JetBrains+Mono:wght@500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"></noscript>
 <style>
-  /* ================= SHARP GROTESK (uploaded) ================= */
+  
   @font-face {
     font-family: "Sharp Grotesk Medium 20";
     src: url("assets/fonts/SharpGrotesk-Medium20.woff2") format("woff2"),
@@ -251,7 +252,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   a { color: inherit; text-decoration: none; }
   img { display: block; max-width: 100%; }
 
-  /* ================= TYPOGRAPHY ================= */
+  
   .display {
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: 900;
@@ -265,7 +266,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     letter-spacing: 0.05em;
   }
 
-  /* ================= NAV ================= */
+  
   .nav {
     position: sticky;
     top: 0;
@@ -363,7 +364,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     .nav-links, .phone { display: none; }
   }
 
-  /* ================= HERO ================= */
+  
   .hero {
     position: relative;
     background: #041549;
@@ -448,7 +449,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     0%   { transform: translateX(-160%); opacity: 0; }
     35%  { opacity: 1; }
     50%  { transform: translateX(3%); }
-    /* impact tremor */
+    
     58%  { transform: translateX(-2.2%) translateY(-0.4%) rotate(-0.6deg); }
     64%  { transform: translateX(1.8%) translateY(0.3%) rotate(0.5deg); }
     70%  { transform: translateX(-1.3%) translateY(-0.2%) rotate(-0.35deg); }
@@ -514,7 +515,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     font-weight: 800;
   }
 
-  /* COUNTDOWN CARD */
+  
   .countdown-card {
     background: rgba(10,15,58,0.55);
     border: 1.5px solid rgba(255,212,0,0.4);
@@ -610,7 +611,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   }
   .countdown-card .btn { width: 100%; text-align: center; font-size: 13px; padding: 13px 18px 12px; }
 
-  /* OFFER CARD (replaces countdown) */
+  
   .offer-rating {
     display: flex;
     align-items: center;
@@ -725,13 +726,20 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     height: 9px;
     border-radius: 50%;
     background: var(--green);
-    box-shadow: 0 0 0 0 rgba(31,168,116,0.6);
+    position: relative;
+  }
+  .offer-avail .pulse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(31,168,116,0.6);
     animation: availPulse 1.8s infinite;
   }
   @keyframes availPulse {
-    0%   { box-shadow: 0 0 0 0 rgba(31,168,116,0.6); }
-    70%  { box-shadow: 0 0 0 8px rgba(31,168,116,0); }
-    100% { box-shadow: 0 0 0 0 rgba(31,168,116,0); }
+    0%   { transform: scale(1); opacity: 0.6; }
+    70%  { transform: scale(2.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
   }
   .offer-call {
     display: block;
@@ -752,7 +760,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     .offer-price .amt { font-size: 32px; }
   }
 
-  /* ================= TRUST BAR ================= */
+  
   .trust {
     background: var(--yellow);
     border-top: 3px solid var(--black);
@@ -788,7 +796,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     }
   }
 
-  /* ================= SECTIONS ================= */
+  
   section.block {
     padding: 96px 28px;
     max-width: 1280px;
@@ -824,7 +832,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     margin: 0 0 48px;
   }
 
-  /* ================= FOR UBER DRIVERS ================= */
+  
   .uber {
     background: var(--black);
     color: #fff;
@@ -882,7 +890,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     margin-top: auto;
   }
 
-  /* ================= FLEET ================= */
+  
   .fleet {
     background: var(--off-white);
   }
@@ -1091,7 +1099,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     box-shadow: 0 6px 0 var(--blue-dark);
   }
 
-  /* ================= PROMO STRIP ================= */
+  
   .promo-strip {
     background: var(--yellow);
     overflow: hidden;
@@ -1127,7 +1135,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     to { transform: translateX(-50%); }
   }
 
-  /* ================= HOW IT WORKS ================= */
+  
   .how-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1171,7 +1179,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     line-height: 1.55;
   }
 
-  /* ================= TESTIMONIALS ================= */
+  
   .testi {
     background: transparent;
     color: #fff;
@@ -1245,7 +1253,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     margin-top: 2px;
   }
 
-  /* ================= CHAT CTA ================= */
+  
   .chat-cta {
     background: radial-gradient(circle at 50% 42%, #FFEEC3 0%, #FFD400 68%, #F0A81E 100%);
     border-top: 3px solid var(--black);
@@ -1302,15 +1310,22 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     width: 8px; height: 8px;
     background: var(--green);
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(31,168,116,0.3);
+    position: relative;
+  }
+  .chat-pill .dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(31,168,116,0.5);
     animation: pulse 2s infinite;
   }
   @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 3px rgba(31,168,116,0.3); }
-    50% { box-shadow: 0 0 0 6px rgba(31,168,116,0.1); }
+    0%, 100% { transform: scale(1.4); opacity: 0.5; }
+    50% { transform: scale(2.2); opacity: 0.1; }
   }
 
-  /* ================= FAQ ================= */
+  
   .faq-grid {
     border-top: 1.5px solid var(--gray-line);
     margin-top: 16px;
@@ -1359,7 +1374,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     padding-bottom: 22px;
   }
 
-  /* ================= FIND US ================= */
+  
   .find {
     background: var(--blue-darker);
     color: #fff;
@@ -1450,7 +1465,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     filter: contrast(1.05) saturate(0.95);
   }
 
-  /* ================= FOOTER ================= */
+  
   footer.foot {
     background: var(--black);
     color: rgba(255,255,255,0.5);
@@ -1522,7 +1537,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   }
   .foot-bottom .social a:hover { background: #fff; color: var(--blue); }
 
-  /* ================= FLOATING WHATSAPP ================= */
+  
   .float-chat {
     position: fixed;
     right: 22px;
@@ -1573,7 +1588,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     .float-chat { padding: 14px; }
   }
 
-  /* ================= MOBILE OVERFLOW FIXES ================= */
+  
   @media (max-width: 720px) {
     .hero-title .y {
       width: auto !important;
