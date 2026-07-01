@@ -412,10 +412,14 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     color: var(--blue);
   }
   @media (max-width: 540px) {
+    .hero-inner > div:first-child {
+      min-width: 0;
+    }
     .hero-tag {
-      max-width: 100%;
-      white-space: normal;
-      align-items: flex-start;
+      font-size: 13px !important;
+      letter-spacing: 0 !important;
+      white-space: nowrap;
+      max-width: calc(100vw - 44px);
     }
   }
   .hero-title {
