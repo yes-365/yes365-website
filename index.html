@@ -489,6 +489,8 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   }
   @media (max-width: 700px) {
     .hero-title .line > span { font-size: clamp(28px, 8.6vw, 50px) !important; }
+    .hero-ctas { display: none !important; }
+    .hero-inner { gap: 0; }
   }
   .hero-sub {
     font-size: 17px;
@@ -632,6 +634,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   .offer-rating {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     flex-wrap: wrap;
     margin-bottom: 14px;
@@ -728,6 +731,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   .offer-avail {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 4px;
     gap: 9px;
     font-family: "JetBrains Mono", monospace;
@@ -769,10 +773,10 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   .offer-call:hover { color: #fff; }
 
   @media (max-width: 980px) {
-    .countdown-card { margin-top: 80px; }
+    .countdown-card { margin-top: 20px; }
   }
   @media (max-width: 540px) {
-    .countdown-card { margin-top: 60px; padding: 20px 18px; }
+    .countdown-card { margin-top: 25px; padding: 20px 18px; }
     .offer-card .promo-head { font-size: 26px; }
     .offer-price .amt { font-size: 32px; }
   }
@@ -1731,20 +1735,18 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
         <div class="countdown-car"><picture><source srcset="assets/camry-hero-clean.webp" type="image/webp" /><img src="assets/camry-hero-clean.png" alt="Toyota Camry Hybrid — Yes365 rideshare rental Sydney" width="705" height="354" fetchpriority="high" /></picture></div>
         <div class="offer-rating">
           <span class="stars" aria-hidden="true">★★★★★</span>
-          <span class="rating-num">4.9</span>
-          <span class="rating-txt" style="font-family: &quot;Sharp Grotesk Medium 20&quot;; margin: 0px 0px 0px 5px; font-size: 12px">from 200+ Sydney drivers</span>
+          <span class="rating-txt" style="font-family: &quot;Sharp Grotesk Medium 20&quot;; margin: 0px 0px 0px 5px; font-size: 12px">5-star rating on Uber Comfort</span>
         </div>
-        <h3 class="promo-head" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;">Start earning in <br/><span class="y">24 hours.</span></h3>
+        <h3 class="promo-head" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; text-align: center">Start earning in <br/><span class="y">24 hours.</span></h3>
         
-        <div class="offer-price" style="border-radius: 20px">
-          <span class="from" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px; font-size: 18px">STARTS FROM</span>
-          <span class="amt" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 21px">$200 /week</span>
-          <span class="price-note" style="font-family: &quot;Sharp Grotesk Medium 25&quot;; font-size: 16px; letter-spacing: 0px">Unlimited kms · all-inclusive</span>
+        <div class="offer-price" style="border-radius: 20px; justify-content: center">
+          <span class="from" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px; font-size: 18px">Prices starting from</span>
+          <span class="amt" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 28px">$270/week</span>
         </div>
         
-        <div class="offer-avail" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 14px"><span class="pulse" aria-hidden="true"></span>Limited hybrids available this week</div>
-        <a href="https://wa.me/61456555415?text=Hi%20Yes365!%20I%20came%20from%20the%20website%2C%20I%20want%20to%20book%20my%20hybrid%20car%20and%20start%20driving.%20Can%20you%20help%20me%3F" target="_blank" rel="noopener" class="btn btn-y" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 18px">Reserve my hybrid →</a>
-        <a href="tel:+61456555415" class="offer-call" style="font-size: 16px; font-family: &quot;Sharp Grotesk Medium 20&quot;">or call 0456 555 415 — talk to a real person</a>
+        <div class="offer-avail" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 14px; text-align: center"><span class="pulse" aria-hidden="true"></span>Limited hybrids available</div>
+        <a href="https://wa.me/61456555415?text=Hi%20Yes365!%20I%20came%20from%20the%20website%2C%20I%20want%20to%20book%20my%20hybrid%20car%20and%20start%20driving.%20Can%20you%20help%20me%3F" target="_blank" rel="noopener" class="btn btn-y" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; font-size: 18px">Book Your Hybrid Now →</a>
+        <a href="tel:+61456555415" class="offer-call" style="font-size: 16px; font-family: &quot;Sharp Grotesk Medium 20&quot;">or call 0456 555 415</a>
       </aside>
     </div>
   </header>
@@ -1752,8 +1754,8 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   <!-- =============== TRUST BAR =============== -->
   <div class="trust">
     <div class="trust-inner">
-      <span style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px; font-size: 13px">✓ Comprehensive Rideshare Insurance</span>
-      <span style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px; font-size: 13px">✓ Full Maintenance</span>
+      <span style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px">✓ Comprehensive Rideshare Insurance</span>
+      <span style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px">✓ Full Maintenance</span>
       <span style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px">✓ Friendly with All Backgrounds</span>
       <span style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px">✓ 24/7 Roadside Assistance</span>
     </div>
@@ -1940,7 +1942,7 @@ Uber/DiDi drivers from day one.
     <h2 class="section-title" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;">From phone call<br/>to <span class="b">driving</span> in <span class="b">24 hours.</span></h2>
 
     <div class="how-grid" style="border-radius: 20px">
-      <div class="step" style="border-width: 0px 2px 20px 0px">
+      <div class="step">
         <div class="step-num">01</div>
         <h3 style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;">Pick your car</h3>
         <p style="font-family: &quot;Sharp Grotesk Medium 20&quot;">Choose online or message us on WhatsApp. We'll confirm availability and lock in your weekly rate.</p>
