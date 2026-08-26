@@ -3,6 +3,8 @@ FROM nginx:1.27-alpine
 # Build trigger test — Tekton CI smoke test
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY index.html /usr/share/nginx/html/index.html
+COPY privacy-policy.html /usr/share/nginx/html/privacy-policy.html
+COPY terms-and-conditions.html /usr/share/nginx/html/terms-and-conditions.html
 COPY robots.txt /usr/share/nginx/html/robots.txt
 COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
 COPY llms.txt /usr/share/nginx/html/llms.txt
