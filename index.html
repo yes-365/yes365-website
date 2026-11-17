@@ -929,7 +929,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   .fleet-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 56px 18px;
     margin-top: 8px;
   }
   @media (max-width: 1080px) { .fleet-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -938,7 +938,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     background: #fff;
     border: 1.5px solid var(--gray-line);
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
     transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
     display: flex;
     flex-direction: column;
@@ -949,7 +949,7 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     border-color: var(--blue);
   }
   .car-thumb {
-    height: 200px;
+    height: 150px;
     background: linear-gradient(135deg, var(--blue-soft) 0%, #ffffff 100%);
     position: relative;
     display: flex;
@@ -957,24 +957,60 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     justify-content: center;
     border-bottom: 1.5px solid var(--gray-line);
     padding: 16px 12px;
-    overflow: hidden;
+    overflow: visible;
+    border-radius: 20px 20px 0 0;
+  }
+  /* ground shadow to anchor the car for the 3D breakout effect */
+  .car-thumb::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 26px;
+    transform: translateX(-50%);
+    width: 58%;
+    height: 13px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(10,15,58,0.24) 0%, rgba(10,15,58,0) 70%);
+    z-index: 0;
+    pointer-events: none;
+    transition: width 0.35s ease, opacity 0.35s ease;
+  }
+  .car-card:hover .car-thumb::after {
+    width: 50%;
+    opacity: 0.85;
   }
   .car-thumb img.flip {
-    transform: scaleX(-1) scale(1.12);
+    transform: scaleX(-1) translateY(-13%) scale(1.1);
   }
   .car-card:hover .car-thumb img.flip {
-    transform: scaleX(-1) scale(1.16);
+    transform: scaleX(-1) translateY(-19%) scale(1.15);
   }
   .car-thumb img {
-    width: 100%;
+    position: relative;
+    width: 94%;
     height: auto;
-    max-height: 100%;
-    filter: drop-shadow(0 8px 10px rgba(10,15,58,0.18));
-    transition: transform 0.3s ease;
-    transform: scale(1.12);
+    max-height: 115%;
+    z-index: 1;
+    filter: drop-shadow(0 15px 17px rgba(10,15,58,0.22));
+    transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transform: translateY(-13%) scale(1.1);
   }
   .car-card:hover .car-thumb img {
-    transform: scale(1.16);
+    transform: translateY(-19%) scale(1.15);
+  }
+  /* Camry 60 PNG has more whitespace — zoom it a touch to match the others */
+  .car-thumb img.zoom-plus {
+    transform: translateY(-13%) scale(1.18);
+  }
+  .car-card:hover .car-thumb img.zoom-plus {
+    transform: translateY(-19%) scale(1.23);
+  }
+  /* Corolla hatchback reads shorter — zoom it (keeps the horizontal flip) */
+  .car-thumb img.flip.zoom-flip {
+    transform: scaleX(-1) translateY(-13%) scale(1.18);
+  }
+  .car-card:hover .car-thumb img.flip.zoom-flip {
+    transform: scaleX(-1) translateY(-19%) scale(1.23);
   }
   .car-thumb .car-tag {
     position: absolute;
@@ -988,20 +1024,19 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
     background: var(--yellow);
     padding: 4px 8px;
     text-transform: uppercase;
-    z-index: 2;
+    z-index: 3;
   }
   .car-thumb .car-sold {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-35deg);
-    width: 200%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     overflow: hidden;
     background: #e53535;
-    padding: 4px 0;
-    box-shadow: 0 3px 12px rgba(229,53,53,0.5);
+    padding: 5px 0;
+    box-shadow: 0 -3px 12px rgba(229,53,53,0.35);
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
   }
   .car-sold .sold-marquee {
     display: inline-flex;
@@ -1679,21 +1714,10 @@ src="https://www.facebook.com/tr?id=1684047765960093&ev=PageView&noscript=1"
   }
   @media (max-width: 720px) {
     .car-thumb {
-      height: 220px;
+      height: 175px;
       padding: 8px 12px;
     }
-    .car-thumb img {
-      transform: scale(1);
-    }
-    .car-card:hover .car-thumb img {
-      transform: scale(1.04);
-    }
-    .car-thumb img.flip {
-      transform: scaleX(-1) scale(1);
-    }
-    .car-card:hover .car-thumb img.flip {
-      transform: scaleX(-1) scale(1.04);
-    }
+    /* breakout transforms from the base rules are kept on mobile (no reset) */
   }
 </style>
 </head>
@@ -1846,7 +1870,7 @@ Uber/DiDi drivers from day one.
         <!-- Camry 60 $270 -->
         <div class="car-card" style="border-radius: 20px">
           <div class="car-thumb">
-            <picture><source srcset="assets/car-camry-60.webp" type="image/webp" /><img src="assets/car-camry-60.png" alt="Toyota Camry 60 Series Hybrid" width="688" height="363" loading="lazy" /></picture>
+            <picture><source srcset="assets/car-camry-60.webp" type="image/webp" /><img src="assets/car-camry-60.png" alt="Toyota Camry 60 Series Hybrid" class="zoom-plus" width="688" height="363" loading="lazy" /></picture>
           </div>
           <div class="car-info">
             <div class="car-head">
@@ -1919,7 +1943,7 @@ Uber/DiDi drivers from day one.
           <div class="car-thumb">
             <div class="car-sold"><div class="sold-marquee"><span>BOOKED OUT &nbsp;·&nbsp; BOOKED OUT &nbsp;·&nbsp; BOOKED OUT &nbsp;·&nbsp; BOOKED OUT &nbsp;·&nbsp; </span><span>BOOKED OUT &nbsp;·&nbsp; BOOKED OUT &nbsp;·&nbsp; BOOKED OUT &nbsp;·&nbsp; BOOKED OUT &nbsp;·&nbsp; </span></div></div>
             <div class="car-tag" style="font-family: &quot;Sharp Grotesk SemiBold 25&quot;; letter-spacing: 0px; border-radius: 10px">Most in demand</div>
-            <picture><source srcset="assets/car-corolla.webp" type="image/webp" /><img src="assets/car-corolla.png" alt="Toyota Corolla Hatchback Hybrid" class="flip" width="646" height="386" loading="lazy" /></picture>
+            <picture><source srcset="assets/car-corolla.webp" type="image/webp" /><img src="assets/car-corolla.png" alt="Toyota Corolla Hatchback Hybrid" class="flip zoom-flip" width="646" height="386" loading="lazy" /></picture>
           </div>
           <div class="car-info">
             <div class="car-head">
